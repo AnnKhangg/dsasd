@@ -44,7 +44,7 @@ body {
     align-items: center;
 }
 
-.logo  {
+.logo {
     width: 40px;
     height: auto;
     object-fit: cover;
@@ -113,11 +113,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
+
     gap: 5px;
 }
 
-#Github, #Twitter, #Light-Night {
+#Github {
     background-color: white;
     color: rgba(0, 0, 0, 0.829);
     border-radius: 0;
@@ -126,7 +126,7 @@ body {
     transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
 }
 
-#Github:hover, #Twitter:hover, #Light-Night:hover {
+#Github:hover {
     background-color: rgba(135, 135, 135, 0.498);
     color: black;
     border-radius: 10px;
@@ -164,10 +164,11 @@ main {
     display: grid;
     grid-template-columns: 2fr auto auto;
     grid-template-rows: 125px 315px auto;
-    grid-template-areas: 
-    "header header image"
-    "content content image"
-    "footer footer image";
+    grid-template-areas:
+        "header header image"
+        "content content image"
+        "content content image"
+        "footer footer footer";
 
     row-gap: 5px;
     column-gap: 10px;
@@ -231,7 +232,7 @@ main {
     width: 700px;
     height: auto;
     object-fit: cover;
-    
+
     border-radius: 15px;
     justify-self: start;
 }
@@ -240,7 +241,7 @@ main {
     display: block;
 
     padding: 10px 15px;
-    
+
     color: white;
     background-color: rgb(183, 40, 255);
     border-radius: 10% 40% 10% 40%;
@@ -271,7 +272,7 @@ main {
     display: block;
 
     padding: 10px 15px;
-    
+
     color: white;
     background-color: rgb(0, 158, 155);
     border-radius: 40% 10% 50% 20%;

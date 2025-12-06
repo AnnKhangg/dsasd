@@ -14,8 +14,8 @@
 
     width: 35%;
     height: 100%;
-    
-    background: linear-gradient(135deg, red, rgb(255, 72, 72));
+
+    background: linear-gradient(135deg, rgb(255, 118, 118), rgb(255, 0, 0));
 }
 
 /* Phần banner sách */
@@ -29,8 +29,9 @@
     position: absolute;
     top: 40px;
     right: 300px;
-    
-    width: 23%; /* Sửa lại thành 23% khi làm xong thông tin sách */
+
+    width: 23%;
+    /* Sửa lại thành 23% khi làm xong thông tin sách */
     height: 85%;
 
     background-color: rgb(247, 251, 255);
@@ -53,11 +54,13 @@
 }
 
 .book {
-    width: 200px; /* Sửa lại thành 200px khi làm xong thông tin sách */
+    width: 200px;
+    /* Sửa lại thành 200px khi làm xong thông tin sách */
     height: auto;
     object-fit: cover;
 
-    transform: translate(0, 0); /* Sửa lại thành (0, 0) khi làm xong thông tin sách */
+    transform: translate(0, 0);
+    /* Sửa lại thành (0, 0) khi làm xong thông tin sách */
     transition: width 1s ease, transform 1s ease;
 }
 
@@ -114,7 +117,8 @@
     justify-content: center;
     align-items: center;
 
-    position: relative;;
+    position: relative;
+    ;
     top: 25%;
 
     width: 25%;
@@ -141,7 +145,7 @@
 
 #GetBook2:hover {
     width: 30%;
-    
+
     box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.74);
 }
 
@@ -184,8 +188,8 @@
     top: 80%;
     left: 87%;
 
-    background: none;
-    color: black;
+    background: rgb(255, 166, 0);
+    color: white;
 
     transition: background-color 0.5s, color 0.5s;
 }
@@ -200,8 +204,8 @@
     top: 80%;
     left: 92%;
 
-    background-color: rgba(255, 0, 0, 0.874);
-    color: white;
+    background-color: #C9F0E4;
+    color: black;
 
     transition: background-color 0.5s, color 0.5s;
 }
