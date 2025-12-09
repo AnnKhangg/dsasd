@@ -90,7 +90,7 @@
 .about-book {
     position: absolute;
 
-    width: 52%;
+    width: 50%;
     height: 90%;
 
     margin: 20px;
@@ -139,6 +139,8 @@
 }
 
 .link-book {
+    display: block;
+
     color: white;
     text-decoration: none;
 }
@@ -195,7 +197,7 @@
 }
 
 #btnBack2:hover {
-    background-color: rgba(255, 186, 81, 0.879);
+    background-color: rgba(255, 196, 109, 0.879);
     color: white;
 }
 

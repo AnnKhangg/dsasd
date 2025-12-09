@@ -90,7 +90,7 @@
 .about-book {
     position: absolute;
 
-    width: 52%;
+    width: 50%;
     height: 90%;
 
     margin: 20px;
@@ -139,6 +139,8 @@
 }
 
 .link-book {
+    display: block;
+
     color: white;
     text-decoration: none;
 }

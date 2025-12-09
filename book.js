@@ -82,3 +82,16 @@ btnNext3.addEventListener("click", () => {
     bannerBook2.style.visibility = "hidden";
     bannerBook2.style.opacity = "0";
 })
+
+// Background tự chuyển
+const bookBg = document.querySelectorAll('#Good-text .bg');
+let index = 0;
+
+setInterval(() => {
+    bookBg[index].classList.remove('active');
+
+    index++;
+    if(index >= bookBg.length) index = 0;
+
+    bookBg[index].classList.add('active');
+}, 12000);

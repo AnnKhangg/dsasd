@@ -90,7 +90,7 @@
 .about-book {
     position: absolute;
 
-    width: 52%;
+    width: 50%;
     height: 90%;
 
     margin: 20px;
@@ -104,8 +104,9 @@
     font-size: 2.5em
 }
 
-#head1 {
-    color: rgb(239, 155, 0);
+#head3 {
+    color: rgb(0, 214, 93);
+    font-family: "Cabin";
 }
 
 .p1 {
@@ -139,6 +140,8 @@
 }
 
 .link-book {
+    display: block;
+
     color: white;
     text-decoration: none;
 }
