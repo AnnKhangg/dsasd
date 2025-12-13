@@ -215,3 +215,59 @@
   background-color: white;
   color: black;
 }
+
+/* RESPONSIVE */
+
+/* tablet */
+@media (max-width: 992px) {
+}
+
+/* ddienj thoaij */
+@media (max-width: 480px) {
+  #bannerBook1 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #bannerBook1 .book-banner {
+    width: 90%;
+    scale: 0.5;
+    font-size: 2.5em;
+    position: absolute;
+    left: 30%;
+    top: -17%;
+  }
+
+  #bannerBook1:hover .book-banner {
+    width: 190%;
+    height: 190%;
+    transform: translate(-79%, -30%);
+  }
+
+  #bannerBook1:hover .book {
+    width: 30%;
+    transform: translate(0%, -15%);
+  }
+
+  #btnBack1 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext1 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook1 {
+    width: 60%;
+    scale: 1.6;
+    position: relative;
+    top: 11%;
+    left: 11%;
+  }
+}

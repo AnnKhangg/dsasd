@@ -1,306 +1,386 @@
 /* Cài đặt mặc định */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: white;
-    color: black;
-    font-family: "Quicksand";
+  background-color: white;
+  color: black;
+  font-family: "Quicksand";
 }
 
 /* Thanh Navbar điều hướng */
 .navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
-    position: fixed;
-    top: 0px;
+  position: fixed;
+  top: 0px;
 
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
 
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .navbar-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .logo-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .logo {
-    width: 40px;
-    height: auto;
-    object-fit: cover;
+  width: 40px;
+  height: auto;
+  object-fit: cover;
 }
 
 .list-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .link-nav {
-    display: block;
+  display: block;
 
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.696);
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 15px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.696);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
 
-    transition: background-color 0.25s, color 0.25s;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .link-nav:hover {
-    background-color: rgba(135, 135, 135, 0.498);
-    color: black;
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
 }
 
 #Home::before {
-    content: "\f015";
-    font-family: "FontAwesome";
+  content: "\f015";
+  font-family: "FontAwesome";
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 #Book::before {
-    content: "\f02d";
-    font-family: "FontAwesome";
+  content: "\f02d";
+  font-family: "FontAwesome";
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 #Website::before {
-    content: "\f57d";
-    font-family: "FontAwesome";
+  content: "\f57d";
+  font-family: "FontAwesome";
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 #AI::before {
-    content: "\f544";
-    font-family: "FontAwesome";
+  content: "\f544";
+  font-family: "FontAwesome";
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 .navbar-extra {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
-    gap: 5px;
+  gap: 5px;
 }
 
 #Github {
-    background-color: white;
-    color: rgba(0, 0, 0, 0.829);
-    border-radius: 0;
-    cursor: pointer;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.829);
+  border-radius: 0;
+  cursor: pointer;
 
-    transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
+  transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
 }
 
 #Github:hover {
-    background-color: rgba(135, 135, 135, 0.498);
-    color: black;
-    border-radius: 10px;
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
+  border-radius: 10px;
 }
 
 /* Nội dung phần Home Trang Chủ */
 main {
-    position: relative;
-    top: 70px;
+  position: relative;
+  top: 70px;
 
-    font-family: "Open Sans";
+  font-family: "Open Sans";
 }
 
 .head-main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .Head1 {
-    font-size: 5em;
-    text-align: center;
+  font-size: 5em;
+  text-align: center;
 }
 
 .introduction-p {
-    margin-top: 10px;
+  margin-top: 10px;
 
-    color: rgba(0, 0, 0, 0.696);
-    font-family: "Quicksand";
-    text-align: center;
+  color: rgba(0, 0, 0, 0.696);
+  font-family: "Quicksand";
+  text-align: center;
 }
 
 .content-main {
-    display: grid;
-    grid-template-columns: 2fr auto auto;
-    grid-template-rows: 125px 315px auto;
-    grid-template-areas:
-        "header header image"
-        "content content image"
-        "content content image"
-        "footer footer footer";
+  display: grid;
+  grid-template-columns: 2fr auto auto;
+  grid-template-rows: 125px 315px auto;
+  grid-template-areas:
+    "header header image"
+    "content content image"
+    "content content image"
+    "footer footer footer";
 
-    row-gap: 5px;
-    column-gap: 10px;
-    align-items: start;
+  row-gap: 5px;
+  column-gap: 10px;
+  align-items: start;
 }
 
 .Head2 {
-    grid-area: header;
+  grid-area: header;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    min-height: 120px;
+  min-height: 120px;
 
-    font-size: 2.7em;
-    text-align: center;
+  font-size: 2.7em;
+  text-align: center;
 }
 
 .content {
-    grid-area: content;
-    grid-column: 1/2;
-    grid-row: 2/3;
+  grid-area: content;
+  grid-column: 1/2;
+  grid-row: 2/3;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    gap: 5px;
+  gap: 5px;
 
-    margin-left: 0;
-    padding: 0;
-    height: 100px;
+  margin-left: 0;
+  padding: 0;
+  height: 100px;
 }
 
 .information {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    color: black;
-    font-family: "Quicksand";
-    font-size: 1.5em;
-    text-align: center;
+  color: black;
+  font-family: "Quicksand";
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .btn-link {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    gap: 50px;
+  gap: 50px;
 }
 
 .image {
-    grid-area: image;
+  grid-area: image;
 
-    margin-right: 5px;
+  margin-right: 5px;
 
-    width: 700px;
-    height: auto;
-    object-fit: cover;
+  width: 700px;
+  height: auto;
+  object-fit: cover;
 
-    border-radius: 15px;
-    justify-self: start;
+  border-radius: 15px;
+  justify-self: start;
 }
 
 .link-vid {
-    display: block;
+  display: block;
 
-    padding: 10px 15px;
+  padding: 10px 15px;
 
-    color: white;
-    background-color: rgb(183, 40, 255);
-    border-radius: 10% 40% 10% 40%;
-    box-shadow: 0px 0px 0px;
-    text-decoration: none;
+  color: white;
+  background-color: rgb(183, 40, 255);
+  border-radius: 10% 40% 10% 40%;
+  box-shadow: 0px 0px 0px;
+  text-decoration: none;
 
-    transform: scale(1);
-    transition: background-color 0.25s, color 0.25s, border-radius 0.25s, box-shadow 0.25s, transform 0.5s;
+  transform: scale(1);
+  transition: background-color 0.25s, color 0.25s, border-radius 0.25s,
+    box-shadow 0.25s, transform 0.5s;
 }
 
 .link-vid:hover {
-    background-color: rgb(170, 0, 255);
-    color: aliceblue;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.836);
-    transform: scale(1.2);
+  background-color: rgb(170, 0, 255);
+  color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.836);
+  transform: scale(1.2);
 }
 
 .link-vid::before {
-    content: "\f008";
-    font-family: FontAwesome;
+  content: "\f008";
+  font-family: FontAwesome;
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 .link-text {
-    display: block;
+  display: block;
 
-    padding: 10px 15px;
+  padding: 10px 15px;
 
-    color: white;
-    background-color: rgb(0, 158, 155);
-    border-radius: 40% 10% 50% 20%;
-    box-shadow: 0px 0px 0px;
-    text-decoration: none;
+  color: white;
+  background-color: rgb(0, 158, 155);
+  border-radius: 40% 10% 40% 10%;
+  box-shadow: 0px 0px 0px;
+  text-decoration: none;
 
-    transform: scale(1);
-    transition: background-color 0.25s, color 0.25s, border-radius 0.25s, box-shadow 0.25s, transform 0.5s;
+  transform: scale(1);
+  transition: background-color 0.25s, color 0.25s, border-radius 0.25s,
+    box-shadow 0.25s, transform 0.5s;
 }
 
 .link-text:hover {
-    background-color: rgb(0, 221, 217);
-    color: aliceblue;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.836);
-    transform: scale(1.2);
+  background-color: rgb(0, 221, 217);
+  color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.836);
+  transform: scale(1.2);
 }
 
 .link-text::before {
-    content: "\f15b";
-    font-family: FontAwesome;
+  content: "\f15b";
+  font-family: FontAwesome;
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 
-    color: rgba(45, 45, 45, 0.55);
+  color: rgba(45, 45, 45, 0.55);
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .content-main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "content image"
+      "footer footer";
+    grid-template-rows: auto auto auto;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .Head1 {
+    font-size: 3.5em;
+  }
+
+  .Head2 {
+    font-size: 2em;
+  }
+}
+
+/* Điện thoại */
+@media (max-width: 480px) {
+  /* logo */
+  .logo-nav {
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* menu */
+  .list-nav {
+    flex-direction: row;
+    /* không xuống hàng */
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    left: 5%;
+  }
+
+  .head-main {
+    font-size: 0.65em;
+    padding-top: 20%;
+  }
+
+  .content {
+    width: 100%;
+    padding-top: 5em;
+  }
+
+  .content-main {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .footer {
+    width: 100%;
+    padding-top: 7em;
+    font-size: 0.8em;
+  }
+
+  .btn-link {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
