@@ -95,3 +95,38 @@ setInterval(() => {
 
     bookBg[index].classList.add('active');
 }, 12000);
+
+
+// Cuộn đến phần sách văn học
+const Literatures = document.getElementById("Literatures");
+const literaryGenre = document.getElementById("literary-genre");
+
+Literatures.addEventListener("click", () => {
+    literaryGenre.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
+
+// Cuộn đến phần sách văn học
+const Mathematics = document.getElementById("Mathematics");
+const mathematicsGenre = document.getElementById("mathematics-genre");
+
+Mathematics.addEventListener("click", () => {
+    mathematicsGenre.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
+
+
+// Cuộn đến phần sách tiếng Anh
+const English = document.getElementById("English");
+const englishGenre = document.getElementById("English-genre");
+
+English.addEventListener("click", () => {
+    englishGenre.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
