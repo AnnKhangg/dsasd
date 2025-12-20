@@ -1,11 +1,1320 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Liên kết link css -->
+        <link rel="stylesheet" href="website.css">
+
+        <!-- Logo icon Website -->
+        <link rel="icon" href="Image/Logo.png">
+
+        <!-- Liên kết link js -->
+        <script src="https://kit.fontawesome.com/dfe86c678f.js" crossorigin="anonymous"></script>
+
+        <!-- Font Chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playwrite+NO:wght@100..400&family=Quicksand:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">\
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Tên Website -->
+        <title>Website&AI</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar">
+
+                <!-- 2 div dễ dàng cho việc dùng flexbox -->
+                <div class="navbar-row">
+
+                    <!-- Logo và Tên trường -->
+                    <div class="logo-nav">
+                        <img class="logo" src="Image/Logo.png" style = "width: 40px; height: 40px; border-radius: 100px; object-fit: cover;">
+                        <p><b>Trường THPT Bình Mỹ</b></p>
+                    </div>
+
+                    <!-- Danh sách thanh điều hướng -->
+                    <ul class="list-nav">
+                        <li class="items-nav"><a href="index.html" class="link-nav" id="Home">Trang Chủ</a></li>
+                        <li class="items-nav"><a href="book.html" class="link-nav" id="Book">Sách</a></li>
+                        <li class="items-nav"><a href="website.html" class="link-nav" id="Website">Website&AI</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="navbar-extra">
+                    <a href="https://github.com/AnnKhangg/dsasd" target="_blank">
+                        <i class="fa-brands fa-github fa-2x" id="Github"></i>
+                    </a>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <!-- Cân chỉnh cho banner -->
+            <div class="banner-center">
+
+                <!-- Banner -->
+                <div class="banner">
+
+
+                    <!-- Banner sách thứ 1 -->
+                    <div id="bannerBook1">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color1"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/AI/AI1.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head1"><i>ChatGPT</i></h1>
+
+                            <p class="p1">
+                                ChatGPT là mô hình trí tuệ nhân tạo do OpenAI phát triển,
+                                nổi bật với khả năng hiểu ngữ cảnh và giao tiếp tự nhiên
+                                như con người. Ưu thế của ChatGPT là sự linh hoạt, sáng tạo 
+                                và hỗ trợ đa lĩnh vực: từ học tập, viết nội dung, lập trình, 
+                                dịch thuật đến giải thích kiến thức phức tạp. Ngoài ra, ChatGPT 
+                                còn tích hợp nhiều công cụ như tạo hình ảnh, phân tích dữ liệu 
+                                và tra cứu web, giúp người dùng làm việc hiệu quả, nhanh và thông minh hơn.
+                            </p>
+
+                            <button id="GetBook1">
+                                <a class="link-book"
+                                    href="https://chatgpt.com/"
+                                    target="_blank">
+                                    USE THIS AI
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack1">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext1">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Banner sách thứ 2 -->
+                    <div id="bannerBook2">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color2"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/AI/AI2.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head2"><i>Deepseek</i></h1>
+
+                            <p class="p1">
+                                DeepSeek là mô hình trí tuệ nhân tạo do Trung Quốc phát triển, 
+                                nổi bật với khả năng xử lý logic, tính toán và phân tích dữ liệu 
+                                phức tạp với chi phí thấp. Ưu thế của DeepSeek nằm ở tốc độ nhanh, 
+                                khả năng xử lý đầu vào dài và mô hình “Mixture-of-Experts” giúp tối 
+                                ưu hiệu suất. DeepSeek phù hợp cho các công việc kỹ thuật, nghiên 
+                                cứu và lập trình, đồng thời được nhiều người dùng ưa chuộng vì dễ 
+                                truy cập, tiết kiệm và có độ chính xác cao.
+                            </p>
+
+                            <button id="GetBook2">
+                                <a class="link-book"
+                                    href="https://www.deepseek.com/"
+                                    target="_blank">
+                                    USE THIS AI
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack2">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext2">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+                    <!-- Banner sách thứ 3 -->
+                    <div id="bannerBook3">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color3"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/AI/AI3.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head3"><i>Gemini</i></h1>
+
+                            <p class="p1">
+                                Gemini là mô hình trí tuệ nhân tạo do Google DeepMind phát triển, 
+                                có khả năng xử lý đa phương tiện gồm văn bản, hình ảnh, âm thanh và video. 
+                                Ưu điểm của Gemini là tích hợp sâu với các sản phẩm Google như Tìm kiếm, 
+                                YouTube và Workspace, giúp người dùng học tập, làm việc và sáng tạo hiệu quả hơn. 
+                                Ngoài ra, nó còn mạnh về tư duy logic và phân tích thông tin chính xác.
+                            </p>
+
+                            <button id="GetBook3">
+                                <a class="link-book"
+                                    href="https://gemini.google.com/"
+                                    target="_blank">
+                                    USE THIS AI
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack3">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext3">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Banner sách thứ 4 -->
+                    <div id="bannerBook4">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color4"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/AI/AI4.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head4"><i>Sora</i></h1>
+
+                            <p class="p1">
+                                Sora là mô hình trí tuệ nhân tạo do OpenAI phát triển, 
+                                chuyên tạo video từ văn bản mô tả. Ưu thế của Sora là khả 
+                                năng tái hiện cảnh vật, chuyển động và ánh sáng chân thực, 
+                                giúp người dùng biến ý tưởng thành video sống động chỉ bằng 
+                                vài dòng mô tả. Công nghệ này mở ra tiềm năng lớn trong phim ảnh, 
+                                quảng cáo, giáo dục và sáng tạo nội dung, tiết kiệm thời gian và 
+                                chi phí sản xuất.
+                            </p>
+
+                            <button id="GetBook4">
+                                <a class="link-book"
+                                    href="https://sora.com/"
+                                    target="_blank">
+                                    USE THIS AI
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack4">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext4">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Banner sách thứ 5 -->
+                    <div id="bannerBook5">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color5"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/AI/AI5.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head5"><i>Claude</i></h1>
+
+                            <p class="p1">
+                                Claude là mô hình trí tuệ nhân tạo do công ty Anthropic phát triển, 
+                                nổi bật với khả năng hiểu ngôn ngữ tự nhiên sâu và phản hồi an toàn, 
+                                lịch sự. Ưu thế của Claude là xử lý văn bản rất dài, lập luận logic tốt 
+                                và hạn chế tạo ra thông tin sai lệch. Nó phù hợp cho các công việc như 
+                                viết tài liệu, nghiên cứu, phân tích dữ liệu, lập trình, cũng như hỗ trợ 
+                                học tập với độ tin cậy cao.
+                            </p>
+
+                            <button id="GetBook5">
+                                <a class="link-book"
+                                    href="https://claude.ai/"
+                                    target="_blank">
+                                    USE THIS AI
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack5">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext5">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Những AI đang thịnh hành -->
+            <div id = "English-genre">
+
+                <!-- Phần header cho phần thể loại tiếng Anh -->
+                <div class="border-genre">
+                    <h1 class="head3"><b>AI Thịnh Hành</b></h1>
+                </div>
+
+                <!-- Flex cho bố cục -->
+                <div class = "flex-rcm-book">
+
+                    <!-- Những cuốn sách được đề xuất -->
+
+                    <!-- Cuốn sách đầu tiên -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI1.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">ChatGPT</h2>
+                            <p class = "author">OpenAI</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://chatgpt.com/">
+                                <button type = "button" class = "btn-buy-rcm">USE THIS AI</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 2 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI2.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">DeepSeek</h2>
+                            <p class = "author">DeepSeek AI</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.deepseek.com/">
+                                <button type = "button" class = "btn-buy-rcm">USE THIS AI</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 3 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI3.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Gemini</h2>
+                            <p class = "author">Google DeepMind</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://gemini.google.com/">
+                                <button type = "button" class = "btn-buy-rcm">USE THIS AI</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 4 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI4.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Sora</h2>
+                            <p class = "author">Open AI</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://sora.com/">
+                                <button type = "button" class = "btn-buy-rcm">USE THIS AI</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 5 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI5.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Claude</h2>
+                            <p class = "author">Anthropic</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://claude.ai/">
+                                <button type = "button" class = "btn-buy-rcm">USE THIS AI</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 6 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI6.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Copilot</h2>
+                            <p class = "author">Microsoft</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://copilot.microsoft.com/">
+                                <button type = "button" class = "btn-buy-rcm">USE THIS AI</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 7 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI7.jpg" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Elicit</h2>
+                            <p class = "author">Ought Institute</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://elicit.com/">
+                                <button type = "button" class = "btn-buy-rcm">USE THIS AI</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 8 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/AI/AI8.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Quizlet AI</h2>
+                            <p class = "author">Quizlet Inc.</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://quizlet.com/features/ai-study-tools>">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Lời nhắn -->
+             <div id="Good-text">
+
+                <!-- Phần background kèm lời trích hay -->
+                <div class = "bg active" id="background-text1">
+
+                    <!-- Hình ảnh background -->
+                    <img src="..\Image\Background6.jpg" class="book-background">
+
+                    <!-- Chữ trong background -->
+                    <div class="text-on-background">
+                        <p class="text-on">“AI là một trong những điều quan trọng nhất mà nhân loại đang tạo ra. Nhưng giống như mọi công cụ mạnh mẽ khác, ta phải dùng nó một cách có trách nhiệm.”
+                        </p>
+                        <p class="author">--SUNDAR PICHAI--</p>
+                    </div>
+
+                </div>
+            
+             </div>
+
+
+            <!-- Banner tiếp theo -->
+             <!-- Cân chỉnh cho banner -->
+            <div class="banner-center" style = "position: relative; top: 275px;">
+
+                <!-- Banner -->
+                <div class="banner">
+
+
+                    <!-- Banner sách thứ 1 -->
+                    <div id="bannerBook6">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color6"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/Website/Website1.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head6"><i>Duolingo</i></h1>
+
+                            <p class="p1">
+                               Duolingo là ứng dụng học ngoại ngữ miễn phí nổi tiếng, 
+                               được phát triển bởi Duolingo Inc. (Mỹ). Ứng dụng giúp người 
+                               dùng học hơn 30 ngôn ngữ thông qua các bài học ngắn, vui nhộn 
+                               và có yếu tố trò chơi như tích điểm, xếp hạng. Ưu điểm của Duolingo 
+                               là giao diện thân thiện, dễ tiếp cận, giúp người học rèn luyện kỹ 
+                               năng nghe, nói, đọc, viết hiệu quả mỗi ngày.
+                            </p>
+
+                            <button id="GetBook6">
+                                <a class="link-book"
+                                    href="https://www.duolingo.com/"
+                                    target="_blank">
+                                    ACESS THE WEB
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack6">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext6">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Banner sách thứ 7 -->
+                    <div id="bannerBook7">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color7"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/website/Website2.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head7"><i>Khan Academy</i></h1>
+
+                            <p class="p1">
+                               Khan Academy là tổ chức giáo dục phi lợi nhuận do Salman Khan sáng lập năm 2008, 
+                               với mục tiêu mang lại “giáo dục miễn phí, chất lượng cho mọi người, ở mọi nơi”. 
+                               Trang web cung cấp hàng nghìn bài giảng video và bài tập thực hành về toán học, 
+                               khoa học, lập trình, kinh tế và nhiều môn học khác. Ưu điểm của Khan Academy là 
+                               miễn phí, dễ hiểu, có hệ thống học theo cấp độ, phù hợp cho mọi lứa tuổi.
+                            </p>
+
+                            <button id="GetBook7">
+                                <a class="link-book"
+                                    href="https://www.khanacademy.org/"
+                                    target="_blank">
+                                    ACESS THE WEB
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack7">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext7">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+                    <!-- Banner sách thứ 8 -->
+                    <div id="bannerBook8">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color8"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/Website/Website3.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head8"><i>Coursera</i></h1>
+
+                            <p class="p1">
+                               Coursera là nền tảng học trực tuyến toàn cầu được thành lập năm 2012 
+                               bởi hai giáo sư Đại học Stanford – Andrew Ng và Daphne Koller. Trang 
+                               web cung cấp hàng nghìn khóa học từ các trường đại học và tổ chức hàng 
+                               đầu thế giới như Google, Yale, hay Stanford. Coursera nổi bật với chứng 
+                               chỉ quốc tế, nội dung chất lượng cao và hỗ trợ nhiều lĩnh vực như khoa học, 
+                               kinh doanh, lập trình, và kỹ năng nghề nghiệp.
+                            </p>
+
+                            <button id="GetBook8">
+                                <a class="link-book"
+                                    href="https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwj04sOa28qRAxVFi7kFHVg1EkMYACICCAEQABoCdG0&co=1&ase=2&gclid=Cj0KCQiAjJTKBhCjARIsAIMC448R8i6W2bxUWhKDT4wB0Orm4cpI9lFxeRRXHjgYbL9oaR-Aqpl_XQkaAqrMEALw_wcB&cid=CAASugHkaBGKM9ITIK1BW0aJ4mYRcUPY9QZA2cg0wnIfv9QxvTTvScL_wmbKj-uNVYTmuFEYcn2hW4OUppdggyNyBdfeulrOYPzhCllrkksLOxVjJEdCshqTCgySuPylxaQxhtBcJ_wkhpMJGkXEfcgoQd2teFK0Qu22in45GaTdF58A_-vG04_pdeo3n_PfRwvZWb4OtwpoGf8ObJjLE4aU5XTsWFbw-f976wAHx6kmYh0NWOcwNGgP4v24EUs&cce=2&category=acrcp_v1_32&sig=AOD64_1MU0dAitTHRdz335_TLJnbW7T0kg&q&nis=4&adurl=https://www.coursera.org/courseraplus?utm_medium%3Dsem%26utm_source%3Dgg%26utm_campaign%3Db2c_apac_x_coursera_ftcof_courseraplus_cx_dr_bau_gg_sem_bd-ex_s2_all_m_hyb_23-12_x%26campaignid%3D20989858741%26adgroupid%3D157016705446%26device%3Dc%26keyword%3Dcoursera%26matchtype%3De%26network%3Dg%26devicemodel%3D%26creativeid%3D689547274242%26assetgroupid%3D%26targetid%3Dkwd-36262515261%26extensionid%3D%26placement%3D%26gad_source%3D1%26gad_campaignid%3D20989858741%26gbraid%3D0AAAAADdKX6bKxZ5Jqq0pRLXwSMllhdHk1%26gclid%3DCj0KCQiAjJTKBhCjARIsAIMC448R8i6W2bxUWhKDT4wB0Orm4cpI9lFxeRRXHjgYbL9oaR-Aqpl_XQkaAqrMEALw_wcB&ved=2ahUKEwioqL2a28qRAxUAs1YBHXarNngQ0Qx6BAgLEAE"
+                                    target="_blank">
+                                    ACESS THE WEB
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack8">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext8">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Banner sách thứ 9 -->
+                    <div id="bannerBook9">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color9"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/Website/Website4.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head9"><i>W3School</i></h1>
+
+                            <p class="p1">
+                                W3Schools là trang web học lập trình trực tuyến miễn phí, ra đời năm 1998 
+                                bởi công ty Refsnes Data (Na Uy). Trang này nổi tiếng vì cách dạy ngắn gọn, 
+                                dễ hiểu và có ví dụ minh họa trực tiếp cho người mới học. W3Schools cung cấp 
+                                tài liệu và bài thực hành về HTML, CSS, JavaScript, Python, C, SQL, PHP, Java 
+                                và nhiều công nghệ web khác. Người học có thể viết và chạy code trực tiếp trên 
+                                trang, giúp hiểu nhanh và ghi nhớ lâu hơn.
+                            </p>
+
+                            <button id="GetBook9">
+                                <a class="link-book"
+                                    href="https://www.w3schools.com/"
+                                    target="_blank">
+                                    ACESS THE WEB
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack9">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext9">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Banner sách thứ 10 -->
+                    <div id="bannerBook10">
+
+                        <!-- Phần màu cho bên phải -->
+                        <div class="color-right" id="color10"></div>
+
+                        <!-- Banner sách -->
+                        <div class="book-banner">
+                            <img src="Image/Website/Website5.png" class="book">
+                        </div>
+
+                        <!-- Giới thiệu về cuốn sách -->
+                        <div class="about-book">
+                            <h1 class="head1" id="head10"><i>Google Scholar</i></h1>
+
+                            <p class="p1">
+                                Google Scholar là công cụ tìm kiếm học thuật miễn phí do Google phát triển, 
+                                ra mắt năm 2004. Trang web giúp người dùng tìm kiếm các tài liệu nghiên cứu, 
+                                bài báo khoa học, luận văn, sách và trích dẫn học thuật từ nhiều nguồn uy tín 
+                                trên toàn thế giới. Ưu điểm của Google Scholar là dễ sử dụng, kết quả đáng tin 
+                                cậy, có trích dẫn rõ ràng và cho phép lưu tài liệu yêu thích. Đây là công cụ quan 
+                                trọng cho sinh viên, nhà nghiên cứu và người viết luận văn.
+                            </p>
+
+                            <button id="GetBook10">
+                                <a class="link-book"
+                                    href="https://scholar.google.com/"
+                                    target="_blank">
+                                    ACESS THE WEB
+                                </a>
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="btn-banner" id="btnBack10">
+                            <p>&lt</p>
+                        </button>
+                        <button type="button" class="btn-banner" id="btnNext10">
+                            <p>&gt</p>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Website giúp môn tiếng Anh -->
+            <div id = "English-web" style = "position: relative; top: 300px">
+
+                <!-- Phần header cho phần thể loại tiếng Anh -->
+                <div class="border-genre">
+                    <h1 class="head3"><b>Một Vài Web Tiếng Anh</b></h1>
+                </div>
+
+                <!-- Flex cho bố cục -->
+                <div class = "flex-rcm-book">
+
+                    <!-- Những cuốn sách được đề xuất -->
+
+                    <!-- Cuốn sách đầu tiên -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website1.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Duolingo</h2>
+                            <p class = "author">Luis von Ahn và Severin Hacker</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.duolingo.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 2 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website6.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">BBC Learning English</h2>
+                            <p class = "author">BBC</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.bbc.co.uk/learningenglish/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 3 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website7.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">VOA Learing English</h2>
+                            <p class = "author">VOA</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://learningenglish.voanews.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 4 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website8.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">British Council</h2>
+                            <p class = "author">British Council</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://learnenglish.britishcouncil.org/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 5 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website9.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Grammarly</h2>
+                            <p class = "author">Alex, Max, Dmytro</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.grammarly.com/media-assets">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 6 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website10.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Quizlet</h2>
+                            <p class = "author">Andrew Sutherland</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://quizlet.com/210473324/logo-quiz-flash-cards/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 7 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website11.jpg" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">EF English Live</h2>
+                            <p class = "author">Bertil Hult</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://englishlive.ef.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 8 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website12.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Busuu</h2>
+                            <p class = "author">Bernhard Niesner và Adrian Hilti</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.busuu.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Website giúp lập trình -->
+            <div id = "Code-web" style = "position: relative; top: 300px">
+
+                <!-- Phần header cho phần thể loại tiếng Anh -->
+                <div class="border-genre">
+                    <h1 class="head3"><b>Một Vài Web Lập Trình</b></h1>
+                </div>
+
+                <!-- Flex cho bố cục -->
+                <div class = "flex-rcm-book">
+
+                    <!-- Những cuốn sách được đề xuất -->
+
+                    <!-- Cuốn sách đầu tiên -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website4.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">W3School</h2>
+                            <p class = "author">Refsnes Data</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.w3schools.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 2 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website13svg.svg" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">FreeCodeCamp</h2>
+                            <p class = "author">Quincy Larson</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.freecodecamp.org/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 3 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website14.avif" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Codecademy</h2>
+                            <p class = "author">Zach Sims và Ryan Bubinski</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwifrvaip8yRAxXBXg8CHQR_MysYACICCAEQABoCdGI&co=1&ase=2&gclid=Cj0KCQiAr5nKBhCpARIsACa_NiM8ZARzoM3Zpqsyj6MeWzryMn0tPxRDxtHmEf3hgclKL1CCBKtEL9UaAvICEALw_wcB&cid=CAASuwHkaMPwZ-j3VDi5ni2aFM-KXbNqoKbF6TEyQJVn4gJgFtOvsQtTU2eWBaU4MFLxAkdRgT0k3mkC_Gx5y3GYt80Yn1bwO-X_hJ850HgEZ6jt91pnnfeatx7raO_U3Ey77iJg1XJVEb31YTppbnXpVY-L-ZBeGjZVlcfmTF90RTUrMYpztvu-zuku259eQyDCh216AE46c7WoEwHzwgFUBhcdSdXkzsbtI_jde7AsLpkIIuCth_hztWuIbQCg&cce=2&category=acrcp_v1_32&sig=AOD64_1-Uyw1GcUETg0hhg06zjwK6e4hLg&q&nis=4&adurl=https://www.codecademy.com?g_network%3Dg%26g_productchannel%3D%26g_adid%3D528849219280%26g_locinterest%3D%26g_keyword%3Dcodecademy%26g_acctid%3D243-039-7011%26g_adtype%3D%26g_keywordid%3Dkwd-41065460761%26g_ifcreative%3D%26g_campaign%3Daccount%26g_locphysical%3D9074093%26g_adgroupid%3D70492864474%26g_productid%3D%26g_source%3D%7Bsourceid%7D%26g_merchantid%3D%26g_placement%3D%26g_partition%3D%26g_campaignid%3D1726903838%26g_ifproduct%3D%26utm_id%3Dt_kwd-41065460761:ag_70492864474:cp_1726903838:n_g:d_c%26utm_source%3Dgoogle%26utm_medium%3Dpaid-search%26utm_term%3Dcodecademy%26utm_campaign%3DINTL_Brand_Exact%26utm_content%3D528849219280%26g_adtype%3Dsearch%26g_acctid%3D243-039-7011%26gad_source%3D1%26gad_campaignid%3D1726903838%26gbraid%3D0AAAAAon8KZHoWAYp1rFpwqdZTMaJeXPmG%26gclid%3DCj0KCQiAr5nKBhCpARIsACa_NiM8ZARzoM3Zpqsyj6MeWzryMn0tPxRDxtHmEf3hgclKL1CCBKtEL9UaAvICEALw_wcB&ved=2ahUKEwjQz-6ip8yRAxUVs1YBHTVdBAEQ0Qx6BAgLEAE">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 4 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website15.svg" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Stack Overflow</h2>
+                            <p class = "author">Jeff Atwood và Joel Spolsky</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://stackoverflow.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 5 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website16.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">GitHub</h2>
+                            <p class = "author">Tom, Chris, PJ, Scott</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://github.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 6 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website17.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Udemy</h2>
+                            <p class = "author">Eren, Gagan, Oktay</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.udemy.com/?srsltid=AfmBOoq634XhcBRz6nYReLe4eVs-6I9SQZmuC7Ls0AHVpWhNnfqC9y6e">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 7 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website18.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Kaggle</h2>
+                            <p class = "author">Anthony và Ben Hamner</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.kaggle.com/brand-guidelines">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 8 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website19.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">MBN Web Docs</h2>
+                            <p class = "author">Mozilla Foundation</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://developer.mozilla.org/en-US/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Website giúp môn toán -->
+            <div id = "Math-web" style = "position: relative; top: 300px">
+
+                <!-- Phần header cho phần thể loại tiếng Anh -->
+                <div class="border-genre">
+                    <h1 class="head3"><b>Một Vài Web Toán</b></h1>
+                </div>
+
+                <!-- Flex cho bố cục -->
+                <div class = "flex-rcm-book">
+
+                    <!-- Những cuốn sách được đề xuất -->
+
+                    <!-- Cuốn sách đầu tiên -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website2.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Khan Academy</h2>
+                            <p class = "author">Salman Khan</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.khanacademy.org/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 2 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website20.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Worlfram Alpha</h2>
+                            <p class = "author">Stephen Wolfram</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.wolframalpha.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 3 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website21.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Brilliant</h2>
+                            <p class = "author">Sue, Matthew, Michael</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://brilliant.org/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 4 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website22.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">MathWay</h2>
+                            <p class = "author">Glenn Halstead</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.mathway.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 5 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website23webp.webp" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Symbolab Math Solver</h2>
+                            <p class = "author">Michal, Eyal, Lev</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.symbolab.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 6 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website24.jpg" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Desmos</h2>
+                            <p class = "author">Eli Luberoff</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.desmos.com/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 7 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website25.webp" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">Paul’s Online Math</h2>
+                            <p class = "author">Paul Dawkins</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://tutorial.math.lamar.edu/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuốn sách thứ 8 -->
+                    <div class = "rcm-book">
+
+                        <!-- Hình ảnh cuốn sách -->
+                        <img src = "Image/Website/Website26.png" class = "img-book">
+
+                        <!-- Tên cuốn sách và tác giả -->
+                        <div class = "organise-rcm">
+                            <h2 class = "name-rcm">GeoGebra</h2>
+                            <p class = "author">Markus Hohenwarter</p>
+                        </div>
+
+                        <div class = "get-rcm">
+                            <a class = "link-rcm" target = "_blank" href = "https://www.geogebra.org/">
+                                <button type = "button" class = "btn-buy-rcm">ACESS THE WEB</button>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Phần chân trang -->
+        <footer>
+
+            <!-- Thiết kế footer -->
+            <div class = "inspiration">
+
+                <!-- Tên người làm website -->
+                <h1 class = "Author">Khang & Khải</h1>
+
+                <!-- Địa chỉ -->
+
+                    <div class = "info">
+
+                        <h1 class = "head-footer">Thông Tin</h1>
+
+                        <br><br>
+
+                        <h2>Trường: THPT Bình Mỹ</h2>
+
+                        <br>
+
+                        <h2>Lớp: 12A4</h2>
+
+                    </div>
+
+                    <!-- Website-->
+                    <div class = "website">
+
+                        <h1 class = "head-footer">Website</h1>
+
+                        <br><br>  
+
+                        <h2><a href = "index.html" class = "link-footer">Trang Chủ</a></h2>
+
+                        <br>
+
+                        <h2><a href = "index.html" class = "link-footer">Website & AI</a></h2>
+
+                    </div>
+
+                    <!-- Trang Cá Nhân -->
+                    <div class = "contact">
+
+                        <h1 class = "head-footer">Profile</h1>
+
+                        <br><br>
+
+                        <div>
+                            <h2 class = "name-author" style = "display: inline-block;">An Khang:</h2>
+
+                            <!-- Trang Facebook -->
+                            <a href = "https://www.facebook.com/an.khang.611102?locale=vi_VN" target = "_blank">
+                                <i class="fa-brands fa-facebook fa-2x" style = "color: rgb(111, 111, 255)"></i>
+                            </a>
+
+                            <!-- Trang Github -->
+                            <a href = "https://github.com/AnnKhangg" target = "_blank">
+                                <i class="fa-brands fa-github fa-2x" style = "color: rgb(111, 111, 255)"></i>
+                            </a>
+                            
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <h2 class = "name-author" style = "display: inline-block;">Tấn Khải:</h2>
+
+                            <!-- Trang Facebook -->
+                            <a href = "https://www.facebook.com/biet.ai.khong.366659?locale=vi_VN" target = "_blank">
+                                <i class="fa-brands fa-facebook fa-2x" style = "color: rgb(111, 111, 255)"></i>
+                            </a>
+
+                            <!-- Trang Github -->
+                            <a href = "https://github.com/Naanka17" target = "_blank">
+                                <i class="fa-brands fa-github fa-2x" style = "color: rgb(111, 111, 255)"></i>
+                            </a>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class = "footer-inspiration">ⓒ2025 Được lấy cảm hứng từ Abdul Aziz Reza</div>
+
+            </div>
+
+        </footer>
+
+        <div class="box-unsee"></div>
+
+            <script src = "website.js"></script>
+
+        </main>
+        
+    </body>
+
 </html>

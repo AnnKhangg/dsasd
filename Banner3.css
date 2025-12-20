@@ -1,6 +1,6 @@
 /* Banner thứ 1 */
 #bannerBook3 {
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
 
     transition: opacity 1.5s ease;

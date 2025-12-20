@@ -755,107 +755,111 @@ main {
     box-shadow: 0px 0px 20px rgb(0, 255, 149);
 }
 
-
 /* Phần chân trang */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 400px;
+  position: relative;
+  top: 400px;
 
-    font-family: sans-serif;
+  font-family: "Quicksand";
 }
 
 .inspiration {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 3fr 20px;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 20px;
+  grid-template-areas:
     "Name Name Name"
     "Info Website Contact"
     "Footer Footer Footer";
 
-    gap: 25px;
+  gap: 25px;
 
-    width: 90%;
-    min-height: 400px;
+  width: 90%;
+  min-height: 400px;
 
-    background: linear-gradient(135deg, #9796f0, #fbc7d4);
-    border-radius: 5px;
-    color: aliceblue;
+  background: linear-gradient(135deg, #9796f0, #fbc7d4);
+  border-radius: 10px;
+  color: aliceblue;
 }
 
 .Author {
-    grid-area: Name;
+  grid-area: Name;
 
-    font-family: "Playwrite No";
-    font-size: 3em;
-    text-align: center;
+  font-family: "Playwrite No";
+  font-size: 3.5em;
+  text-align: center;
 
-    height: 100px;
+  height: 100px;
+  padding-top: 1%;
+}
+
+.head-footer {
+  padding-top: 8%;
 }
 
 /* Phần thông tin địa chỉ */
 .info {
-    grid-area: Info;
+  grid-area: Info;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 
-    text-align: center;   
+  text-align: center;
 }
 
 /* Phần trang website khác */
 .website {
-    grid-area: Website;
+  grid-area: Website;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 
-    text-align: center;
+  text-align: center;
 }
 
 .link-footer {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 .head-footer {
-    text-shadow: 0px 0px 3px aliceblue;
+  text-shadow: 0px 0px 3px aliceblue;
 }
 
 .contact {
-    grid-area: Contact;
+  grid-area: Contact;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 
-    text-align: center;
+  text-align: center;
 }
 
 .name-author {
-    margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .footer-inspiration {
-    grid-area: Footer;
-    
-    color: rgba(255, 255, 255, 0.781);
-    text-align: center;
+  grid-area: Footer;
+
+  color: rgba(255, 255, 255, 0.781);
+  text-align: center;
 }
 
 /* Boxunsee */
 .box-unsee {
-    position: relative;
-    top: 500px;
+  position: relative;
+  top: 500px;
 
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 30px;
 }
