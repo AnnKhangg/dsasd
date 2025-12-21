@@ -132,8 +132,8 @@ body {
 
 /* Phần chính của website */
 main {
-    position: relative;
-    top: 40px;
+  position: relative;
+  top: 40px;
 }
 
 /* Cân chỉnh banner ở giữa */
@@ -158,1373 +158,1368 @@ main {
 
 /* Phần banner sách */
 .book-banner {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    top: 40px;
-    right: 300px;
+  position: absolute;
+  top: 40px;
+  right: 300px;
 
-    width: 23%;
-    /* Sửa lại thành 23% khi làm xong thông tin sách */
-    height: 85%;
+  width: 23%;
+  /* Sửa lại thành 23% khi làm xong thông tin sách */
+  height: 85%;
 
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
 
-    cursor: pointer;
-    overflow: hidden;
+  cursor: pointer;
+  overflow: hidden;
 
-    transform: translate(0, 0);
-    z-index: 10;
-    transition: width 0.5s, transform 0.5s;
+  transform: translate(0, 0);
+  z-index: 10;
+  transition: width 0.5s, transform 0.5s;
 }
 
 .book {
-    width: 200px;
-    /* Sửa lại thành 200px khi làm xong thông tin sách */
-    height: auto;
-    object-fit: cover;
+  width: 200px;
+  /* Sửa lại thành 200px khi làm xong thông tin sách */
+  height: auto;
+  object-fit: cover;
 
-    transform: translate(0, 0);
-    /* Sửa lại thành (0, 0) khi làm xong thông tin sách */
-    transition: width 1s ease, transform 1s ease;
+  transform: translate(0, 0);
+  /* Sửa lại thành (0, 0) khi làm xong thông tin sách */
+  transition: width 1s ease, transform 1s ease;
 }
-
 
 /* Giới thiệu về sách ở banner */
 .about-book {
-    position: absolute;
+  position: absolute;
 
-    width: 50%;
-    height: 90%;
+  width: 50%;
+  height: 90%;
 
-    margin: 20px;
+  margin: 20px;
 }
 
 #head1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(355deg, #e7e7ff, #b3d2ff, #00D4FF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: bold;
-    font-family: "Roboto";
-    font-size: 3em;
+  color: transparent;
+  background: linear-gradient(355deg, #e7e7ff, #b3d2ff, #00d4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 3em;
 }
 
 .p1 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* Banner thứ 1 */
 #bannerBook1 {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color1 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #2BC0E4, #78ffd6);
+  background: linear-gradient(135deg, #2bc0e4, #78ffd6);
 }
-
 
 #GetBook1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    ;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(165deg, #2BC0E4, #78ffd6);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px rgba(154, 255, 255, 0.74);
+  background: linear-gradient(165deg, #2bc0e4, #78ffd6);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px rgba(154, 255, 255, 0.74);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
-.link-book {
-    display: block;
-
-    color: white;
-    text-decoration: none;
+#GetBook1,
+#GetBook2,
+#GetBook3,
+#GetBook4,
+#GetBook5,
+#GetBook6,
+#GetBook7,
+#GetBook8,
+#GetBook9,
+#GetBook10 {
+  color: white;
+  text-decoration: none;
 }
 
 #GetBook1:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px rgba(154, 255, 255, 0.74);
+  box-shadow: 0px 0px 20px rgba(154, 255, 255, 0.74);
 }
 
 .btn-banner {
-    width: 4%;
-    height: 13%;
+  width: 4%;
+  height: 13%;
 
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50%;
-    font-size: 2em;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 2em;
 
-    cursor: pointer;
-    z-index: 1000px;
+  cursor: pointer;
+  z-index: 1000px;
 }
 
 #btnBack1 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background: #EC6F66;
-    color: white;
+  background: #ec6f66;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack1:hover {
-    background-color: rgb(255, 164, 164);
-    color: black;
+  background-color: rgb(255, 164, 164);
+  color: black;
 }
 
 #btnNext1 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: #00B4DB;
-    color: white;
+  background-color: #00b4db;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext1:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 /* Banner thứ 2 */
 #bannerBook2 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color2 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #00B4DB, #0083B0);
+  background: linear-gradient(135deg, #00b4db, #0083b0);
 }
 
 #head2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #00B4DB, #0083B0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Roboto";
-    font-size: 2.5em;
+  color: transparent;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #00B4DB, #0083B0);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px rgba(255, 0, 0, 0.74);
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px rgba(255, 0, 0, 0.74);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook2:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px rgba(0, 85, 255, 0.74);
+  box-shadow: 0px 0px 20px rgba(0, 85, 255, 0.74);
 }
 
 #btnBack2 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background: #78ffd6;
-    color: white;
+  background: #78ffd6;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack2:hover {
-    background-color: #27ffbe;
-    color: black;
+  background-color: #27ffbe;
+  color: black;
 }
 
 #btnNext2 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: #9B72CB;
-    color: white;
+  background-color: #9b72cb;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext2:hover {
-    background-color: #d2abff;
-    color: black;
+  background-color: #d2abff;
+  color: black;
 }
-
 
 /* Banner thứ 3 */
 #bannerBook3 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color3 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #4285F4, #9B72CB, #D96570);
+  background: linear-gradient(135deg, #4285f4, #9b72cb, #d96570);
 }
 
-
 #head3 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(355deg, #4285F4, #9B72CB, #D96570);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Cabin";
-    font-family: "Poppins";
-    font-size: 2.5em
+  color: transparent;
+  background: linear-gradient(355deg, #4285f4, #9b72cb, #d96570);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Cabin";
+  font-family: "Poppins";
+  font-size: 2.5em;
 }
 
 #GetBook3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    ;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(355deg, #4285F4, #9B72CB, #D96570);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #d96571a2;
+  background: linear-gradient(355deg, #4285f4, #9b72cb, #d96570);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #d96571a2;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook3:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #d96571a2;
+  box-shadow: 0px 0px 20px #d96571a2;
 }
 
 #btnBack3 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background-color: #00B4DB;
-    color: white;
+  background-color: #00b4db;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack3:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 #btnNext3 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background: #5bafe0;
-    color: white;
+  background: #5bafe0;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext3:hover {
-    background-color: #c8ebff;
-    color: black;
+  background-color: #c8ebff;
+  color: black;
 }
 
 /* Banner thứ 4 */
 #bannerBook4 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color4 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #1488CC, #2B32B2);
+  background: linear-gradient(135deg, #1488cc, #2b32b2);
 }
 
-
 #head4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #1488CC, #2B32B2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Cabin";
-    font-family: "Roboto";
-    font-size: 2.5em
+  color: transparent;
+  background: linear-gradient(135deg, #1488cc, #2b32b2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Cabin";
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    ;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #1488CC, #2B32B2);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #656dd9a2;
+  background: linear-gradient(135deg, #1488cc, #2b32b2);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #656dd9a2;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook4:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #656dd9a2;
+  box-shadow: 0px 0px 20px #656dd9a2;
 }
 
 #btnBack4 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background: #78ffd6;
-    color: white;
+  background: #78ffd6;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack4:hover {
-    background-color: #27ffbe;
-    color: black;
+  background-color: #27ffbe;
+  color: black;
 }
 
 #btnNext4 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: #EC6F66;
-    color: white;
+  background-color: #ec6f66;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext4:hover {
-    background-color: #ff564a;
-    color: black;
+  background-color: #ff564a;
+  color: black;
 }
 
 /* Banner thứ 5 */
 #bannerBook5 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color5 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #EC6F66, #F3A183);
+  background: linear-gradient(135deg, #ec6f66, #f3a183);
 }
 
-
 #head5 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #EC6F66, #F3A183);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Cabin";
-    font-family: "Roboto";
-    font-size: 2.5em
+  color: transparent;
+  background: linear-gradient(135deg, #ec6f66, #f3a183);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Cabin";
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    ;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #EC6F66, #F3A183);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #ffd23ca2;
+  background: linear-gradient(135deg, #ec6f66, #f3a183);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #ffd23ca2;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook5:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #ffd23ca2;
+  box-shadow: 0px 0px 20px #ffd23ca2;
 }
 
 #btnBack5 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background: #5bafe0;
-    color: white;
+  background: #5bafe0;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack5:hover {
-    background-color: #c8ebff;
-    color: black;
+  background-color: #c8ebff;
+  color: black;
 }
 
 #btnNext5 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: rgba(255, 186, 58, 0.874);
-    color: white;
+  background-color: rgba(255, 186, 58, 0.874);
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext5:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 
 /* Tác giả */
 .author {
-    position: relative;
+  position: relative;
 
-    color: rgba(128, 128, 128, 0.683);
+  color: rgba(128, 128, 128, 0.683);
 }
 
 /* Những AI đang được phổ biến */
 #English-genre {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 0px;
+  position: relative;
+  top: 0px;
 
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 /* Thiết kế head cho thể loại tiếng Anh */
 #English-genre .border-genre {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(130deg, #4285F4, #9B72CB, #D96570);
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+  background: linear-gradient(130deg, #4285f4, #9b72cb, #d96570);
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
 }
 
 .head3 {
-    color: aliceblue;
-    font-size: 3em;
-    text-align: center;
+  color: aliceblue;
+  font-size: 3em;
+  text-align: center;
+}
+
+.border-genre br {
+  display: none;
 }
 
 /* Đặt flex để chỉnh bố cục */
 .flex-rcm-book {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 
-    width: 98%;
-    height: 550px;
+  width: 98%;
+  height: 550px;
 
-    margin: 20px;
+  margin: 20px;
 
-    border-bottom: 2px solid black;
-    overflow-y: auto;
+  border-bottom: 2px solid black;
+  overflow-y: auto;
 }
 
 .rcm-book {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
+  position: relative;
 
-    width: 20%;
-    height: 450px;
+  width: 20%;
+  height: 450px;
 
-    margin: 20px;
+  margin: 20px;
 }
 
 .img-book {
-    position: relative;
-    bottom: 20px;
+  position: relative;
+  bottom: 20px;
 
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 .organise-rcm {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    bottom: 40px;
+  position: absolute;
+  bottom: 40px;
 }
 
 .name-rcm {
-    position: relative;
-    font-size: 1.3em;
+  position: relative;
+  font-size: 1.3em;
 }
 
 /* Nút mua sách được đề xuất */
 .get-rcm {
-    width: 100%;
+  width: 100%;
 }
 
 .link-rcm {
-    display: block;
+  display: block;
 }
 
 /* Thiết kế nút mua cho thể loại tiếng Anh */
 #English-genre .btn-buy-rcm {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    
-    padding: 2px;
+  width: 100%;
 
-    background: linear-gradient(80deg, #4285F4, #9B72CB, #D96570);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-    box-shadow: 0px 0px 0px #D96570;
+  padding: 2px;
 
-    cursor: pointer;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(80deg, #4285f4, #9b72cb, #d96570);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 0px #d96570;
+
+  cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 
 #English-genre .btn-buy-rcm:hover {
-    box-shadow: 0px 0px 20px #D96570;
+  box-shadow: 0px 0px 20px #d96570;
 }
-
 
 /* Lời nhắn */
 #Good-text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 100px;
+  position: relative;
+  top: 100px;
 }
 
 /* Lời trích hay 1 */
 #background-text1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Active hiện banner */
 #Good-text .active {
-    opacity: 1;
-    z-index: 10;
+  opacity: 1;
+  z-index: 10;
 }
 
 .book-background {
-    width: 80%;
-    height: 400px;
-    object-fit: cover;
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
 
-    border-radius: 20px;
-    box-shadow: 0px 0px 50px grey;
-    filter: brightness(25%);
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px grey;
+  filter: brightness(25%);
 }
 
 .text-on-background {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
 
-    gap: 30px;
+  gap: 30px;
 
-    position: absolute;
+  position: absolute;
 
-    width: 60%;
+  width: 60%;
 }
 
 .text-on {
-    color: white;
-    font-size: 1.5em;
+  color: white;
+  font-size: 1.5em;
 }
 
 .text-on-background .author {
-    color: rgba(221, 221, 221, 0.847);
-    font-size: 1.3em;
-    text-align: end;
+  color: rgba(221, 221, 221, 0.847);
+  font-size: 1.3em;
+  text-align: end;
 }
-
 
 /* Banner Website */
 /* Banner thứ 6 */
 #bannerBook6 {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color6 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #58CC02, #FFD635);
+  background: linear-gradient(135deg, #58cc02, #ffd635);
 }
 
 #head6 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #A8E063, #56AB2F);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Roboto";
-    font-size: 2.5em;
+  color: transparent;
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #A8E063, #56AB2F);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #56AB2F;
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #56ab2f;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook6:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #56AB2F;
+  box-shadow: 0px 0px 20px #56ab2f;
 }
 
 #btnBack6 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background-color: #1A73E8;
-    color: white;
+  background-color: #1a73e8;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack6:hover {
-    background-color: #0672ff;
-    color: black;
+  background-color: #0672ff;
+  color: black;
 }
 
 #btnNext6 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: #76ffdf;
-    color: white;
+  background-color: #76ffdf;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext6:hover {
-    background-color: #16ffc9;
-    color: black;
+  background-color: #16ffc9;
+  color: black;
 }
 
 /* Banner thứ 7 */
 #bannerBook7 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color7 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #14BF96, #009EAA);
+  background: linear-gradient(135deg, #14bf96, #009eaa);
 }
 
 #head7 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #14BF96, #5BE4D0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Roboto";
-    font-size: 2.5em;
+  color: transparent;
+  background: linear-gradient(135deg, #14bf96, #5be4d0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #14BF96, #009EAA, #00C4CC);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #14BF96;
+  background: linear-gradient(135deg, #14bf96, #009eaa, #00c4cc);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #14bf96;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook7:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #14BF96;
+  box-shadow: 0px 0px 20px #14bf96;
 }
 
 #btnBack7 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background: #7ee64f;
-    color: white;
+  background: #7ee64f;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack7:hover {
-    background-color: #4cf100;
-    color: black;
+  background-color: #4cf100;
+  color: black;
 }
 
 #btnNext7 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: #00C6FF;
-    color: white;
+  background-color: #00c6ff;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext7:hover {
-    background-color: #5ecae8;
-    color: black;
+  background-color: #5ecae8;
+  color: black;
 }
 
 /* Banner thứ 8 */
 #bannerBook8 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color8 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #0056D2, #2A73CC);
+  background: linear-gradient(135deg, #0056d2, #2a73cc);
 }
 
 #head8 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #0056D2, #00C6FF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Roboto";
-    font-size: 2.5em;
+  color: transparent;
+  background: linear-gradient(135deg, #0056d2, #00c6ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #2A73CC, #A1C4FD);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #A1C4FD;
+  background: linear-gradient(135deg, #2a73cc, #a1c4fd);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #a1c4fd;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook8:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #A1C4FD;
+  box-shadow: 0px 0px 20px #a1c4fd;
 }
 
 #btnBack8 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background-color: #76ffdf;
-    color: white;
+  background-color: #76ffdf;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack8:hover {
-    background-color: #16ffc9;
-    color: black;
+  background-color: #16ffc9;
+  color: black;
 }
 
 #btnNext8 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: #00C853;
-    color: white;
+  background-color: #00c853;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext8:hover {
-    background-color: #00ff6a;
-    color: black;
+  background-color: #00ff6a;
+  color: black;
 }
 
 /* Banner thứ 9 */
 #bannerBook9 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color9 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #04AA6D, #2EB872);
+  background: linear-gradient(135deg, #04aa6d, #2eb872);
 }
 
 #head9 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #04AA6D, #A8E063);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Roboto";
-    font-size: 2.5em;
+  color: transparent;
+  background: linear-gradient(135deg, #04aa6d, #a8e063);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook9 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #00C853, #B2FF59);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #00C853;
+  background: linear-gradient(135deg, #00c853, #b2ff59);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #00c853;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook9:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #00C853;
+  box-shadow: 0px 0px 20px #00c853;
 }
 
 #btnBack9 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background-color: #00C6FF;
-    color: white;
+  background-color: #00c6ff;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack9:hover {
-    background-color: #5ecae8;
-    color: black;
+  background-color: #5ecae8;
+  color: black;
 }
 
 #btnNext9 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: #1A73E8;
-    color: white;
+  background-color: #1a73e8;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext9:hover {
-    background-color: #0672ff;
-    color: black;
+  background-color: #0672ff;
+  color: black;
 }
 
 /* Banner thứ 10 */
 #bannerBook10 {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color10 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, #1A73E8, #4285F4);
+  background: linear-gradient(135deg, #1a73e8, #4285f4);
 }
 
 #head10 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: transparent;
-    background: linear-gradient(135deg, #4285F4, #E8F0FE);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Roboto";
-    font-size: 2.5em;
+  color: transparent;
+  background: linear-gradient(135deg, #4285f4, #e8f0fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Roboto";
+  font-size: 2.5em;
 }
 
 #GetBook10 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 25%;
+  position: absolute;
+  top: 85%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, #1A73E8, #4285F4);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px #1A73E8;
+  background: linear-gradient(135deg, #1a73e8, #4285f4);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px #1a73e8;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 #GetBook10:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px #1A73E8;
+  box-shadow: 0px 0px 20px #1a73e8;
 }
 
 #btnBack10 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background-color: #00C6FF;
-    color: white;
+  background-color: #00c6ff;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack10:hover {
-    background-color: #5ecae8;
-    color: black;
+  background-color: #5ecae8;
+  color: black;
 }
 
 #btnNext10 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background: #7ee64f;
-    color: white;
+  background: #7ee64f;
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext10:hover {
-    background-color: #4cf100;
-    color: black;
+  background-color: #4cf100;
+  color: black;
 }
 
 /* Web tiếng Anh */
 #English-web {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 0px;
+  position: relative;
+  top: 0px;
 
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 #English-web .border-genre {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(130deg, #1cefff, #3494E6);
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+  background: linear-gradient(130deg, #1cefff, #3494e6);
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
 }
 
 #English-web .btn-buy-rcm {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    
-    padding: 2px;
+  width: 100%;
 
-    background: linear-gradient(80deg, #1cefff, #3494E6);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-    box-shadow: 0px 0px 0px #65C7F7;
+  padding: 2px;
 
-    cursor: pointer;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(80deg, #1cefff, #3494e6);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 0px #65c7f7;
+
+  cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 
 #English-web .btn-buy-rcm:hover {
-    box-shadow: 0px 0px 20px #65C7F7;
+  box-shadow: 0px 0px 20px #65c7f7;
 }
-
 
 /* Web giúp lập trình */
 #Code-web {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 0px;
+  position: relative;
+  top: 0px;
 
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 /* Thiết kế head cho thể loại tiếng Anh */
 #Code-web .border-genre {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(130deg, #606c88, #3f4c6b);
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+  background: linear-gradient(130deg, #606c88, #3f4c6b);
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
 }
 
 #Code-web .btn-buy-rcm {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    
-    padding: 2px;
+  width: 100%;
 
-    background: linear-gradient(80deg, #606c88, #3f4c6b);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-    box-shadow: 0px 0px 0px #4d5356;
+  padding: 2px;
 
-    cursor: pointer;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(80deg, #606c88, #3f4c6b);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 0px #4d5356;
+
+  cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 
 #Code-web .btn-buy-rcm:hover {
-    box-shadow: 0px 0px 20px #4d5356;
+  box-shadow: 0px 0px 20px #4d5356;
 }
-
 
 /* Web giúp toán */
 #Math-web {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 0px;
+  position: relative;
+  top: 0px;
 
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 /* Thiết kế head cho thể loại tiếng Anh */
 #Math-web .border-genre {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(130deg, #B993D6, #8CA6DB);
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+  background: linear-gradient(130deg, #b993d6, #8ca6db);
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
 }
 
 #Math-web .btn-buy-rcm {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    
-    padding: 2px;
+  width: 100%;
 
-    background: linear-gradient(80deg, #B993D6, #8CA6DB);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-    box-shadow: 0px 0px 0px #82d5ff;
+  padding: 2px;
 
-    cursor: pointer;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(80deg, #b993d6, #8ca6db);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 0px #82d5ff;
+
+  cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 
 #Math-web .btn-buy-rcm:hover {
-    box-shadow: 0px 0px 20px #82d5ff;
+  box-shadow: 0px 0px 20px #82d5ff;
 }
-
 
 /* Phần chân trang */
 footer {
@@ -1629,8 +1624,426 @@ footer {
 /* Boxunsee */
 .box-unsee {
   position: relative;
-  top: 500px;
+  top: 450px;
 
   width: 100%;
   height: 30px;
+}
+
+/* RESPONSIVE */
+
+/* Điện thoại */
+@media (max-width: 500px) {
+  /* logo */
+  .logo-nav {
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* menu */
+  .list-nav {
+    flex-direction: row;
+    /* không xuống hàng */
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    left: 5%;
+  }
+
+  /* banner */
+  .banner-center {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    margin-top: 15%;
+  }
+
+  .border-head {
+    width: 100%;
+    text-wrap: nowrap;
+  }
+
+  #bannerBook1 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  .book-banner {
+    width: 80%;
+    scale: 0.5;
+    font-size: 2.5em;
+    position: absolute;
+    left: 35%;
+    top: -17%;
+  }
+
+  #btnBack1 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext1 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook1 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook2 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack2 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext2 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook2 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook3 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack3 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext3 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook3 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook4 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack4 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext4 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook4 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook5 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack5 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext5 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook5 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook6 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack6 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext6 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook6 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook7 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack7 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext7 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook7 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook8 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack8 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext8 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook8 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook9 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack9 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext9 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook9 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #bannerBook10 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #btnBack10 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext10 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook10 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #GetBook1:hover,
+  #GetBook2:hover,
+  #GetBook3:hover,
+  #GetBook4:hover,
+  #GetBook5:hover,
+  #GetBook6:hover,
+  #GetBook7:hover,
+  #GetBook8:hover,
+  #GetBook9:hover,
+  #GetBook10:hover {
+    width: inherit;
+  }
+
+  #Good-text {
+    width: 100%;
+  }
+
+  .book-background {
+    width: 90%;
+    height: 300px;
+  }
+
+  .text-on-background {
+    width: 80%;
+    font-size: 0.7em;
+  }
+
+  #English-genre,
+  #English-web,
+  #Code-web,
+  #Math-web {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #English-genre .border-genre,
+  #English-web .border-genre,
+  #Code-web .border-genre,
+  #Math-web .border-genre {
+    width: 90%;
+  }
+
+  #English-genre br,
+  #English-web br,
+  #Code-web br,
+  #Math-web br {
+    display: block;
+  }
+
+  #English-genre .btn-buy-rcm,
+  #English-web .btn-buy-rcm,
+  #Code-web .btn-buy-rcm,
+  #Math-web .btn-buy-rcm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-rcm-book {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .rcm-book {
+    width: 50%;
+  }
+
+  .img-book {
+    width: 100%;
+  }
+
+  .inspiration {
+    display: block;
+    width: 95%;
+  }
+
+  .inspiration br {
+    display: none;
+  }
+
+  .inspiration h1 {
+    font-size: 1.7em;
+  }
+
+  .inspiration h2 {
+    font-size: 1.1em;
+    padding-top: 6%;
+  }
+
+  .Author {
+    padding-top: 9%;
+    scale: 1.5;
+  }
+
+  .footer-inspiration {
+    padding-top: 5%;
+  }
 }

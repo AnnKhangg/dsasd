@@ -1,758 +1,758 @@
 /* Cài đặt mặc định */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: white;
-    color: black;
-    font-family: "Quicksand";
+  background-color: white;
+  color: black;
+  font-family: "Quicksand";
 }
 
 /* Thanh Navbar điều hướng */
 .navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
-    position: fixed;
-    top: 0px;
+  position: fixed;
+  top: 0px;
 
-    width: 100%;
-    background-color: white;
+  box-shadow: 0px 0px 10px #acb6e5;
 
-    z-index: 1000;
+  width: 100%;
+  background-color: white;
+
+  z-index: 1000;
 }
 
 .navbar-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .logo-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .logo {
-    width: 40px;
-    height: auto;
-    object-fit: cover;
+  width: 40px;
+  height: auto;
+  object-fit: cover;
 }
 
 .list-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .link-nav {
-    display: block;
+  display: block;
 
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.696);
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 15px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.696);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
 
-    transition: background-color 0.25s, color 0.25s;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .link-nav:hover {
-    background-color: rgba(135, 135, 135, 0.498);
-    color: black;
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
 }
 
 #Home::before {
-    content: "\f015";
-    font-family: "FontAwesome";
+  content: "\f015";
+  font-family: "FontAwesome";
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 #Book::before {
-    content: "\f02d";
-    font-family: "FontAwesome";
+  content: "\f02d";
+  font-family: "FontAwesome";
 
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 #Website::before {
-    content: "\f57d";
-    font-family: "FontAwesome";
+  content: "\f57d";
+  font-family: "FontAwesome";
 
-    position: relative;
-    right: 5px;
-}
-
-#AI::before {
-    content: "\f544";
-    font-family: "FontAwesome";
-
-    position: relative;
-    right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 .navbar-extra {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
-    gap: 5px;
+  gap: 5px;
 }
 
 #Github,
 #Twitter,
 #Light-Night {
-    background-color: white;
-    color: rgba(0, 0, 0, 0.829);
-    border-radius: 0;
-    cursor: pointer;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.829);
+  border-radius: 0;
+  cursor: pointer;
 
-    transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
+  transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
 }
 
 #Github:hover,
 #Twitter:hover,
 #Light-Night:hover {
-    background-color: rgba(135, 135, 135, 0.498);
-    color: black;
-    border-radius: 10px;
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
+  border-radius: 10px;
 }
 
 /* Phần chính của trang book */
 
 main {
-    position: relative;
-    top: 40px;
+  position: relative;
+  top: 40px;
 }
 
 /* Cân chỉnh banner ở giữa */
 .banner-center {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Banner */
 .banner {
-    position: relative;
+  position: relative;
 
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 
-    background-color: aliceblue;
-    border: 1px solid black;
+  background-color: aliceblue;
+  border: 1px solid black;
 }
 
 /* position: relative cho phần chọn thể loại sách */
 .categories {
-    position: relative;
-    top: 100px;
-    left: 1%;
-    right: 1%;
+  position: relative;
+  top: 100px;
+  left: 1%;
+  right: 1%;
 
-    width: 98%;
-    height: 400px;
+  width: 98%;
+  height: 400px;
 }
 
 /* Thiết kế header cho phần giới thiệu thể loại */
 .border-head {
+  width: 40%;
+  height: auto;
 
-    width: 40%;
-    height: auto;
-
-    background: linear-gradient(135deg, #5A5BFA, #81B1FA);
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 82% 50%, 100% 100%, 0 100%);
+  background: linear-gradient(135deg, #5a5bfa, #81b1fa);
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 82% 50%, 100% 100%, 0 100%);
 }
 
 .head2 {
-    margin-left: 5px;
+  margin-left: 5px;
 
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 /* Flexbox cho các thể loại */
 .flex-categories {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
 
-    gap: 50px;
+  gap: 50px;
 
-    position: relative;
+  position: relative;
 
-    width: 100%;
-    height: 357px;
+  width: 100%;
+  height: 357px;
 
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Những cuốn sách đang thịnh hành */
 .trending {
-    position: relative;
-    top: 175px;
-    left: 1%;
-    right: 1%;
+  position: relative;
+  top: 175px;
+  left: 1%;
+  right: 1%;
 
-    width: 98%;
-    height: 500px;
+  width: 98%;
+  height: 500px;
 }
 
 /* Thiết kế header cho phần những cuốn sách thịnh hành */
 .trending .border-head {
-    width: 55%;
+  width: 55%;
 
-    background: linear-gradient(135deg, #5433FF, #20BDFF, #A5FECB);
+  background: linear-gradient(135deg, #5433ff, #20bdff, #a5fecb);
 }
 
 .flex-trending {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-    gap: 30px;
+  gap: 30px;
 
-    position: relative;
+  position: relative;
 
-    height: 475px;
+  height: 475px;
 
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 .choose-trending {
-    flex: 0 0 20%;
+  flex: 0 0 20%;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 30px;
+  position: relative;
+  top: 30px;
 
-    min-width: 275px;
-    height: 420px;
+  min-width: 275px;
+  height: 420px;
 }
 
 .about-trending {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 10px;
+  position: relative;
+  top: 10px;
 }
 
 .name-trending {
-    position: relative;
+  position: relative;
 }
 
 .author {
-    position: relative;
+  position: relative;
 
-    color: rgba(128, 128, 128, 0.683);
+  color: rgba(128, 128, 128, 0.683);
 }
 
 .btn-trending {
-    position: relative;
-    top: 13px;
+  position: relative;
+  top: 13px;
 
-    width: 100%;
+  width: 100%;
 }
 
 /* Nút mua sách thịnh hành 1st */
 #btn-buy-1st {
-    width: 100%;
+  width: 100%;
 
-    padding: 10px;
+  padding: 10px;
 
-    background: linear-gradient(135deg, #F9D423, #e65c00);
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px rgb(205, 255, 42);
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, #f9d423, #e65c00);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px rgb(205, 255, 42);
+  transition: box-shadow 0.5s;
 }
 
 #btn-buy-1st .link-book {
-    display: block;
-    font-size: 22px;
+  display: block;
+  font-size: 22px;
 }
 
 #btn-buy-1st:hover {
-    box-shadow: 0px 0px 20px rgb(205, 255, 42);
+  box-shadow: 0px 0px 20px rgb(205, 255, 42);
 }
 
 /* Nút mua sách thịnh hành 2nd */
 #btn-buy-2nd {
-    width: 100%;
+  width: 100%;
 
-    padding: 10px;
+  padding: 10px;
 
-    background: linear-gradient(135deg, #acb6e5, #86fde8);
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px #acb6e5;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, #acb6e5, #86fde8);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #acb6e5;
+  transition: box-shadow 0.5s;
 }
 
 #btn-buy-2nd .link-book {
-    display: block;
-    font-size: 22px;
+  display: block;
+  font-size: 22px;
 }
 
 #btn-buy-2nd:hover {
-    box-shadow: 0px 0px 20px #79CBCA;
+  box-shadow: 0px 0px 20px #79cbca;
 }
 
 /* Nút mua sách thịnh hành 3rd */
 #btn-buy-3rd {
-    width: 100%;
+  width: 100%;
 
-    padding: 10px;
+  padding: 10px;
 
-    background: linear-gradient(135deg, #77A1D3, #79CBCA, #E684AE);
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px #79CBCA;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, #77a1d3, #79cbca, #e684ae);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #79cbca;
+  transition: box-shadow 0.5s;
 }
 
 #btn-buy-3rd .link-book {
-    display: block;
-    font-size: 22px;
+  display: block;
+  font-size: 22px;
 }
 
 #btn-buy-3rd:hover {
-    box-shadow: 0px 0px 20px #79CBCA;
+  box-shadow: 0px 0px 20px #79cbca;
 }
 
 /* Nút mua sách thịnh hành 4th */
 #btn-buy-4th {
-    width: 100%;
+  width: 100%;
 
-    padding: 10px;
+  padding: 10px;
 
-    background: linear-gradient(135deg, #2b5876, #4e4376);
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px #2b5876;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #2b5876;
+  transition: box-shadow 0.5s;
 }
 
 #btn-buy-4th .link-book {
-    display: block;
-    font-size: 22px;
+  display: block;
+  font-size: 22px;
 }
 
 #btn-buy-4th:hover {
-    box-shadow: 0px 0px 20px #2b5876;
+  box-shadow: 0px 0px 20px #2b5876;
 }
 
 /* Nút mua sách thịnh hành 5th */
 #btn-buy-5th {
-    width: 100%;
+  width: 100%;
 
-    padding: 10px;
+  padding: 10px;
 
-    background: linear-gradient(135deg, #B79891, #94716B);
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px #B79891;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, #b79891, #94716b);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #b79891;
+  transition: box-shadow 0.5s;
 }
 
 #btn-buy-5th .link-book {
-    display: block;
-    font-size: 22px;
+  display: block;
+  font-size: 22px;
 }
 
 #btn-buy-5th:hover {
-    box-shadow: 0px 0px 20px #B79891;
+  box-shadow: 0px 0px 20px #b79891;
 }
 
 #Good-text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 250px;
+  position: relative;
+  top: 250px;
 }
 
 /* Lời trích hay 1 */
 #background-text1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    visibility: visible;
-    opacity: 0;
+  visibility: visible;
+  opacity: 0;
 
-    transition: opacity 0.25s;
+  transition: opacity 1s;
 }
 
 /* Lời trích hay 2 */
 #background-text2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    top: 0px;
+  position: absolute;
+  top: 0px;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    visibility: visible;
-    opacity: 0;
+  visibility: visible;
+  opacity: 0;
 
-    transition: opacity 0.25s;
+  transition: opacity 1s;
 }
 
 /* Lời trích hay 3 */
 #background-text3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    top: 0px;
+  position: absolute;
+  top: 0px;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    visibility: visible;
-    opacity: 0;
+  visibility: visible;
+  opacity: 0;
 
-    transition: opacity 0.25s;
+  transition: opacity 1s;
 }
 
 /* Lời trích hay 4 */
 #background-text4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    top: 0px;
+  position: absolute;
+  top: 0px;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    visibility: visible;
-    opacity: 0;
+  visibility: visible;
+  opacity: 0;
 
-    transition: opacity 0.25s;
+  transition: opacity 1s;
 }
 
 /* Lời trích hay 5 */
 #background-text5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    top: 0px;
+  position: absolute;
+  top: 0px;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    visibility: visible;
-    opacity: 0;
+  visibility: visible;
+  opacity: 0;
 
-    transition: opacity 0.25s;
+  transition: opacity 1s;
 }
 
 /* Active hiện banner */
 #Good-text .active {
-    opacity: 1;
-    z-index: 10;
+  opacity: 1;
+  z-index: 10;
 }
 
 .book-background {
-    width: 80%;
-    height: 400px;
-    object-fit: cover;
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
 
-    border-radius: 20px;
-    box-shadow: 0px 0px 50px grey;
-    filter: brightness(25%);
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px grey;
+  filter: brightness(25%);
 }
 
 .text-on-background {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
 
-    gap: 30px;
+  gap: 30px;
 
-    position: absolute;
+  position: absolute;
 
-    width: 60%;
+  width: 60%;
 }
 
 .text-on {
-    color: white;
-    font-size: 1.5em;
+  color: white;
+  font-size: 1.5em;
 }
 
 .text-on-background .author {
-    color: rgba(221, 221, 221, 0.847);
-    font-size: 1.3em;
-    text-align: end;
+  color: rgba(221, 221, 221, 0.847);
+  font-size: 1.3em;
+  text-align: end;
 }
 
 .btn-background {
-    width: 55px;
-    height: 50px;
+  width: 55px;
+  height: 50px;
 
-    margin: 5px;
+  margin: 5px;
 
-    border: 1px solid black;
-    border-radius: 50%;
-    font-size: 2em;
-    text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 2em;
+  text-align: center;
 }
 
 #BackgroundBack1 {
-    background-color: #ff2146;
-    color: white;
+  background-color: #ff2146;
+  color: white;
 }
 
 #BackgroundNext1 {
-    background-color: #12c2e9;
-    color: white;
+  background-color: #12c2e9;
+  color: white;
 }
 
-
 /* Sách văn học, toán học, tiếng Anh */
-#literary-genre, #mathematics-genre, #English-genre {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+#literary-genre,
+#mathematics-genre,
+#English-genre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 250px;
+  position: relative;
+  top: 250px;
 
-    margin-top: 150px;
+  margin-top: 150px;
+}
+
+#literary-genre br,
+#mathematics-genre br,
+#English-genre br {
+  display: none;
 }
 
 /* Thiết kế head cho thể loại văn học */
 #literary-genre .border-genre {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, rgb(78, 169, 255), cyan);
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+  background: linear-gradient(135deg, rgb(78, 169, 255), cyan);
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
 }
 
 /* Thiết kế head cho thể loại toán học */
 #mathematics-genre .border-genre {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, rgb(255, 165, 92), rgb(225, 116, 0));
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+  background: linear-gradient(135deg, rgb(255, 165, 92), rgb(225, 116, 0));
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
 }
 
 /* Thiết kế head cho thể loại tiếng Anh */
 #English-genre .border-genre {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 
-    padding: 5px;
+  padding: 5px;
 
-    background: linear-gradient(135deg, rgb(125, 255, 130), rgb(0, 255, 149));
-    border-radius: 10px 0% 0% 10px;
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+  background: linear-gradient(135deg, rgb(125, 255, 130), rgb(0, 255, 149));
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
 }
 
 .head3 {
-    color: aliceblue;
-    font-size: 3em;
-    text-align: center;
+  color: aliceblue;
+  font-size: 3em;
+  text-align: center;
 }
 
 /* Đặt flex để chỉnh bố cục */
 .flex-rcm-book {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 
-    width: 98%;
-    height: 550px;
+  width: 98%;
+  height: 550px;
 
-    margin: 20px;
+  margin: 20px;
 
-    border-bottom: 2px solid black;
-    overflow-y: auto;
+  border-bottom: 2px solid black;
+  overflow-y: auto;
 }
 
 .rcm-book {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
+  position: relative;
 
-    width: 20%;
-    height: 450px;
+  width: 20%;
+  height: 450px;
 
-    margin: 20px;
+  margin: 20px;
 }
 
 .img-book {
-    position: relative;
-    bottom: 20px;
+  position: relative;
+  bottom: 20px;
 
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 .organise-rcm {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    bottom: 40px;
+  position: absolute;
+  bottom: 40px;
 }
 
 .name-rcm {
-    position: relative;
-    font-size: 1.3em;
+  position: relative;
+  font-size: 1.3em;
 }
 
 /* Nút mua sách được đề xuất */
 .get-rcm {
-    width: 100%;
+  width: 100%;
 }
 
 .link-rcm {
-    display: block;
+  display: block;
 }
 
 /* Thiết kế nút mua cho thể loại văn học */
 #literary-genre .btn-buy-rcm {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    
-    padding: 2px;
+  width: 100%;
 
-    background: linear-gradient(135deg, rgb(78, 169, 255), cyan);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-    box-shadow: 0px 0px 0px cyan;
+  padding: 2px;
 
-    cursor: pointer;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, rgb(78, 169, 255), cyan);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 0px cyan;
+
+  cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 
 #literary-genre .btn-buy-rcm:hover {
-    box-shadow: 0px 0px 20px cyan;
+  box-shadow: 0px 0px 20px cyan;
 }
 
 /* Thiết kế nút mua cho thể loại toán học */
 #mathematics-genre .btn-buy-rcm {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    
-    padding: 2px;
+  width: 100%;
 
-    background: linear-gradient(135deg, rgb(255, 165, 92), rgb(225, 116, 0));
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-    box-shadow: 0px 0px 0px cyan;
+  padding: 2px;
 
-    cursor: pointer;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, rgb(255, 165, 92), rgb(225, 116, 0));
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 0px cyan;
+
+  cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 
 #mathematics-genre .btn-buy-rcm:hover {
-    box-shadow: 0px 0px 20px rgb(255, 165, 92);
+  box-shadow: 0px 0px 20px rgb(255, 165, 92);
 }
 
 /* Thiết kế nút mua cho thể loại tiếng Anh */
 #English-genre .btn-buy-rcm {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: 100%;
-    
-    padding: 2px;
+  width: 100%;
 
-    background: linear-gradient(135deg, rgb(125, 255, 130), rgb(0, 255, 149));
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.5em;
-    box-shadow: 0px 0px 0px cyan;
+  padding: 2px;
 
-    cursor: pointer;
-    transition: box-shadow 0.5s;
+  background: linear-gradient(135deg, rgb(125, 255, 130), rgb(0, 255, 149));
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 0px cyan;
+
+  cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 
 #English-genre .btn-buy-rcm:hover {
-    box-shadow: 0px 0px 20px rgb(0, 255, 149);
+  box-shadow: 0px 0px 20px rgb(0, 255, 149);
 }
 
 /* Phần chân trang */
@@ -764,7 +764,7 @@ footer {
   position: relative;
   top: 400px;
 
-  font-family: "Quicksand";
+  font-family: "Quicksans";
 }
 
 .inspiration {
@@ -858,8 +858,141 @@ footer {
 /* Boxunsee */
 .box-unsee {
   position: relative;
-  top: 500px;
+  top: 450px;
 
   width: 100%;
   height: 30px;
+}
+
+/* RESPONSIVE */
+
+/* Điện thoại */
+@media (max-width: 500px) {
+  /* logo */
+  .logo-nav {
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* menu */
+  .list-nav {
+    flex-direction: row;
+    /* không xuống hàng */
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    left: 5%;
+  }
+
+  /* banner */
+  .banner-center {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .border-head {
+    width: 100%;
+    text-wrap: nowrap;
+  }
+
+  .flex-categories {
+    max-width: 100%;
+    margin-top: 9%;
+  }
+
+  .trending .border-head {
+    width: 100%;
+    text-wrap: wrap;
+  }
+
+  #Good-text {
+    width: 100%;
+  }
+
+  .book-background {
+    width: 90%;
+    height: 300px;
+  }
+
+  .text-on-background {
+    width: 80%;
+    font-size: 0.7em;
+  }
+
+  #literary-genre,
+  #mathematics-genre,
+  #English-genre {
+    width: 100%;
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  #literary-genre .border-genre,
+  #mathematics-genre .border-genre,
+  #English-genre .border-genre {
+    width: 90%;
+  }
+
+  #literary-genre br,
+  #mathematics-genre br,
+  #English-genre br {
+    display: block;
+  }
+
+  #literary-genre .btn-buy-rcm,
+  #mathematics-genre .btn-buy-rcm,
+  #English-genre .btn-buy-rcm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-rcm-book {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .rcm-book {
+    width: 50%;
+  }
+
+  .img-book {
+    width: 100%;
+    padding-bottom: 45%;
+  }
+
+  .inspiration {
+    display: block;
+    width: 95%;
+  }
+
+  .inspiration br {
+    display: none;
+  }
+
+  .inspiration h1 {
+    font-size: 1.7em;
+  }
+
+  .inspiration h2 {
+    font-size: 1.1em;
+    padding-top: 6%;
+  }
+
+  .Author {
+    padding-top: 9%;
+    scale: 1.5;
+  }
+
+  .footer-inspiration {
+    padding-top: 5%;
+  }
 }

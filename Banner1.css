@@ -1,154 +1,153 @@
 /* Banner thứ 1 */
 #bannerBook1 {
-    visibility: visible;
-    opacity: 1;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
 }
 
 /* Phần màu bên phải */
 #color1 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-    width: 35%;
-    height: 100%;
+  width: 35%;
+  height: 100%;
 
-    background: linear-gradient(135deg, rgb(255, 220, 154), rgb(255, 166, 0));
+  background: linear-gradient(135deg, rgb(255, 220, 154), rgb(255, 166, 0));
 }
 
 /* Phần banner sách */
 .book-banner {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    top: 40px;
-    right: 300px;
+  position: absolute;
+  top: 40px;
+  right: 300px;
 
-    width: 23%;
-    /* Sửa lại thành 23% khi làm xong thông tin sách */
-    height: 85%;
+  width: 23%;
+  /* Sửa lại thành 23% khi làm xong thông tin sách */
+  height: 85%;
 
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
 
-    cursor: pointer;
-    overflow: hidden;
+  cursor: pointer;
+  overflow: hidden;
 
-    transform: translate(0, 0);
-    z-index: 10;
-    transition: width 0.5s, transform 0.5s;
+  transform: translate(0, 0);
+  z-index: 10;
+  transition: width 0.5s, transform 0.5s;
 }
 
 .book-banner:hover {
-    width: 32%;
-    height: 85%;
+  width: 32%;
+  height: 85%;
 
-    transform: translate(115px, 0);
+  transform: translate(115px, 0);
 }
 
 .book {
-    width: 200px;
-    /* Sửa lại thành 200px khi làm xong thông tin sách */
-    height: auto;
-    object-fit: cover;
+  width: 200px;
+  /* Sửa lại thành 200px khi làm xong thông tin sách */
+  height: auto;
+  object-fit: cover;
 
-    transform: translate(0, 0);
-    /* Sửa lại thành (0, 0) khi làm xong thông tin sách */
-    transition: width 1s ease, transform 1s ease;
+  transform: translate(0, 0);
+  /* Sửa lại thành (0, 0) khi làm xong thông tin sách */
+  transition: width 1s ease, transform 1s ease;
 }
 
 .book-banner:hover .book {
-    width: 100px;
+  width: 100px;
 
-    transform: translate(-135px, -7px);
+  transform: translate(-135px, -7px);
 }
 
 .introduction-banner {
-    position: absolute;
+  position: absolute;
 
-    width: 100%;
+  width: 100%;
 
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .book-banner:hover .introduction-banner {
-    position: relative;
+  position: relative;
 
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Giới thiệu về sách ở banner */
 .about-book {
-    position: absolute;
+  position: absolute;
 
-    width: 50%;
-    height: 90%;
+  width: 50%;
+  height: 90%;
 
-    margin: 20px;
+  margin: 20px;
 }
 
 .head1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: rgb(0, 0, 0);
-    font-family: "Playwrite No";
-    font-size: 2.5em
+  color: rgb(0, 0, 0);
+  font-family: "Playwrite No";
+  font-size: 2.5em;
 }
 
 #head1 {
-    color: rgb(239, 155, 0);
+  color: rgb(239, 155, 0);
 }
 
 .p1 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 #GetBook1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    ;
-    top: 25%;
+  position: relative;
+  top: 25%;
 
-    width: 25%;
+  width: 25%;
 
-    padding: 5px;
+  padding: 5px;
 
-    background-color: rgb(255, 106, 0);
-    border: none;
-    border-radius: 20px;
-    font-family: "Quicksand";
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.74);
+  background-color: rgb(255, 106, 0);
+  border: none;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-size: 1.1em;
+  box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.74);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    z-index: 2;
-    transition: box-shadow 0.5s, width 0.5s;
+  z-index: 2;
+  transition: box-shadow 0.5s, width 0.5s;
 }
 
 .link-book {
-    display: block;
+  display: block;
 
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #GetBook1:hover {
-    width: 30%;
+  width: 30%;
 
-    box-shadow: 0px 0px 20px rgba(255, 106, 0, 0.74);
+  box-shadow: 0px 0px 20px rgba(255, 106, 0, 0.74);
 }
 
 /* #GetBook::after {
@@ -173,46 +172,102 @@
 
 /* Nút chuyển banner */
 .btn-banner {
-    width: 4%;
-    height: 13%;
+  width: 4%;
+  height: 13%;
 
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50%;
-    font-size: 2em;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 2em;
 
-    cursor: pointer;
-    z-index: 1000px;
+  cursor: pointer;
+  z-index: 1000px;
 }
 
 #btnBack1 {
-    position: absolute;
-    top: 80%;
-    left: 87%;
+  position: absolute;
+  top: 80%;
+  left: 87%;
 
-    background: #C9F0E4;
-    color: black;
+  background: #c9f0e4;
+  color: black;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnBack1:hover {
-    background-color: rgb(255, 123, 123);
-    color: black;
+  background-color: rgb(255, 123, 123);
+  color: black;
 }
 
 #btnNext1 {
-    position: absolute;
-    top: 80%;
-    left: 92%;
+  position: absolute;
+  top: 80%;
+  left: 92%;
 
-    background-color: rgb(255, 0, 0);
-    color: white;
+  background-color: rgb(255, 0, 0);
+  color: white;
 
-    transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #btnNext1:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
+}
+
+/* RESPONSIVE */
+
+/* ddienj thoaij */
+@media (max-width: 500px) {
+  #bannerBook1 {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  #bannerBook1 .book-banner {
+    width: 90%;
+    scale: 0.5;
+    font-size: 2.5em;
+    position: absolute;
+    left: 30%;
+    top: -17%;
+  }
+
+  #bannerBook1:hover .book-banner {
+    width: 190%;
+    height: 190%;
+    transform: translate(-79%, -30%);
+  }
+
+  #bannerBook1:hover .book {
+    width: 30%;
+    transform: translate(0%, -15%);
+  }
+
+  #btnBack1 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 70%;
+  }
+
+  #btnNext1 {
+    width: 12%;
+    position: absolute;
+    top: 102%;
+    left: 87%;
+  }
+
+  #GetBook1 {
+    width: 60%;
+    scale: 1.6;
+    position: absolute;
+    top: 111%;
+    left: 11%;
+  }
+
+  #GetBook1:hover {
+    width: inherit;
+  }
 }

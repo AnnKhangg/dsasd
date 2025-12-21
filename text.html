@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Liên kết link css -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Logo icon Website -->
+    <link rel="icon" href="Image/Logo.png" />
+
+    <!-- Liên kết link js -->
+    <script
+      src="https://kit.fontawesome.com/dfe86c678f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NO:wght@100..400&family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tên Website -->
+    <title>THPT Bình Mỹ - 12A4</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- 2 div dễ dàng cho việc dùng flexbox -->
+        <div class="navbar-row">
+          <!-- Logo và Tên trường -->
+          <div class="logo-nav">
+            <img class="logo" src="Image/Logo.png" />
+            <p style="font-size: 1.3em"><b>THPT Bình Mỹ - 12A4</b></p>
+          </div>
+
+          <!-- Danh sách thanh điều hướng -->
+          <ul class="list-nav">
+            <li class="items-nav">
+              <a href="index.html" class="link-nav" id="Home">Trang Chủ</a>
+            </li>
+            <li class="items-nav">
+              <a href="book.html" class="link-nav" id="Book">Sách</a>
+            </li>
+            <li class="items-nav">
+              <a href="website.html" class="link-nav" id="Website"
+                >Website/AI</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-extra">
+          <a href="https://github.com/AnnKhangg/dsasd" target="_blank">
+            <i class="fa-brands fa-github fa-2x" id="Github"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Tiêu Đề -->
+      <h1 class = "head-step">Các Bước Làm Sản Phẩm Website</h1>
+
+      <!-- Bước 1 -->
+      <h2 class = "step">Bước 1: Xác Định Mục Tiêu Và Nội Dung</h2>
+
+      <p class = "step-p">
+        - Em đã xác định mục tiêu của mình sẽ là làm website giúp cho học tập bằng cách giới thiệu những
+        cuốn sách thuộc 3 thể loại chính, đó là: Văn học, toán và tiếng Anh. Sau đó em cảm thấy sản phẩm
+        của em còn hơi trống, nên em đã quyết định làm ra thêm 2 trang website khác là "Trang Chủ"
+        và "Website/AI" mà mọi người có thể nó trên thanh navbar (Thanh điều hướng phía trên).
+      </p>
+
+      <!-- Bước 2 -->
+      <h2 class = "step">Bước 2: Tạo cấu trúc html và css</h2>
+      <p class = "step-p">
+        - Sau khi xác định được mục tiêu và nội dung, em đã bắt đầu tạo cấu trúc cho html và thêm css vào.
+        Trang đầu tiên em làm là "Trang Chủ". Trang chủ là nơi mà mọi người sẽ đến xem đầu tiên, trong đó
+        có đề cập về thông tin trường của em, và nội dung website. Và đặc biệt là em đã thêm vào 2 nút chuyển trang
+        là "Xem video" và "Các bước" với mục đích là để mọi người có thể xem được quá trình em làm, riêng phần 
+        video thì em không thể nào quay toàn bộ quá trình em làm suốt hơn 5 tiếng nên em chỉ quay lại được vài đoạn
+        để có thể chứng minh rằng đây là Website em tạo ra.
+      </p>
+
+      <p class = "step-p">
+        - Trang thứ 2 em làm đó là trang "Sách", đây là trang mà em đã tốn rất nhiều thời gian nhất, đây
+        là trang mà mọi người có thể vào tham khảo nhưng quyển sách văn học, toán, tiếng Anh để phục vụ 
+        cho quá trình học tập, trang này em đã tham khảo từ Bechance và giao diện là của tác giả Abdul Aziz Reza,
+        em không sao chép ý chang, em chỉ xem là 1 bố cục website liên quan đến giới thiệu sách thì sẽ làm như nào
+        và em chỉ lấy thiết kế banner và thêm hiệu ứng hover của riêng em vào.
+
+        + Phần banner chính là phần ở đầu trang khi mọi người lia chuột vào quyển sách thì nó sẽ hiện ra 
+        thêm thông tin như là: Tác giả, giá trung bình, giải thưởng đặc biệt, ...
+
+        + Tiếp theo là phần những đoạn trích hay, đây là phần mà mọi người có thể đọc được những câu trích
+        hay nhằm nâng cao giá trị của những cuốn sách, phần này mỗi 10s sẽ đổi 1 lần
+      </p>
+
+      <!-- Ảnh minh họa -->
+      <div class = "step-center">
+        <img class = "step-img" src = "Image/Step/step.jpg">
+      </div>
+
+      <p class = "step-p">
+        - Trang thứ 3 là trang Website/AI, đây là trang cũng tương tự như trang "Sách", chỉ khác là đây sẽ
+        giới thiệu về những AI hữu dụng giúp học tập và những trang website học tập khác. Những gì bên trang
+        "Sách" có thì em đều mang y chang qua, chỉ là thay đổi sao cho phù hợp hơn với việc giới thiêu AI và
+        Website
+      </p>
+
+      <!-- Ảnh minh họa -->
+      <div class = "step-center">
+        <img class = "step-img" src = "Image/Step/step2.png">
+      </div>
+
+
+      <!-- Bước 3 -->
+      <h2>Bước 3: Kiểm tra và chỉnh sửa</h2>
+      <p class = "step-p">
+        Đây là bước cuối cùng, em đã kiểm tra kĩ và thấy rằng website của em có thể đánh giá là "Dùng được",
+        vì hiện tại em chỉ mới làm cho trên máy tính, giao diện điện thoại vẫn còn lỗi và em không còn đủ
+        thời gian để sửa
+      </p>
+
+      <p class = "step-p">
+        Nếu mọi người muốn xem bản hoàn thiện nhất của em thì xin hãy sử dụng laptop ạ.
+        Xin chân trọng cảm ơn vì đã đọc 💝
+      </p>
+
+      <h1 style = "margin-top: 50px; color: red; text-align: center;">!--- CÓ THỂ XEM CODE Ở PHẦN GITHUB TRÊN GÓC PHẢI MÀN HÌNH ---!</h1>
+
+    </main>
+
+  </body>
+
+</html>
